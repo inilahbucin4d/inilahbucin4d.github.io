@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BUCIN4D | Akses Hiburan Digital Pilihan</title>
+  <meta name="google-site-verification" content="iZ3NigNx4fyh0fR49S-tnuDCEGbbSXPAkOXxrNfdPHg" />
+  <meta name="description" content="BUCIN4D menghadirkan akses hiburan digital yang praktis dengan tampilan nyaman dan responsif di desktop maupun mobile." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="BUCIN4D" />
+  <link rel="canonical" href="https://inilahbucin4d.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BUCIN4D – Temukan Akses Favoritmu" />
+  <meta property="og:description" content="Nikmati akses praktis ke hiburan digital pilihan bersama BUCIN4D melalui tampilan yang ringan dan responsif." />
+  <meta property="og:url" content="https://inilahbucin4d.github.io/" />
+  <meta property="og:image" content="https://inilahbucin4d.github.io/asset/BUCIN4D.png" />
+  <meta property="og:site_name" content="BUCIN4D Digital" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BUCIN4D | Pilihan Praktis untuk Anda" />
+  <meta name="twitter:description" content="Jelajahi akses hiburan digital BUCIN4D yang ringan, nyaman, dan mudah digunakan dari berbagai perangkat." />
+  <meta name="twitter:image" content="https://inilahbucin4d.github.io/asset/BUCIN4D.png" />
+
+  <link rel="icon" type="image/png" href="https://inilahbucin4d.github.io/asset/BUCIN4D.png" />
+  <meta name="theme-color" content="#701a75" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #3b0764, #831843);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      padding: 20px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .snow-wrap {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: -10px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 10px;
+      user-select: none;
+      animation-name: snowFall;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      text-shadow: 0 0 10px rgba(255,255,255,0.25);
+    }
+
+    .snowflake:nth-child(1)  { left: 5%;  font-size: 10px; animation-duration: 9s;  animation-delay: 0s; }
+    .snowflake:nth-child(2)  { left: 12%; font-size: 14px; animation-duration: 12s; animation-delay: 1s; }
+    .snowflake:nth-child(3)  { left: 20%; font-size: 8px;  animation-duration: 10s; animation-delay: 2s; }
+    .snowflake:nth-child(4)  { left: 28%; font-size: 13px; animation-duration: 14s; animation-delay: 0.5s; }
+    .snowflake:nth-child(5)  { left: 36%; font-size: 9px;  animation-duration: 11s; animation-delay: 1.5s; }
+    .snowflake:nth-child(6)  { left: 44%; font-size: 12px; animation-duration: 13s; animation-delay: 2.5s; }
+    .snowflake:nth-child(7)  { left: 52%; font-size: 10px; animation-duration: 9.5s; animation-delay: 0.8s; }
+    .snowflake:nth-child(8)  { left: 60%; font-size: 15px; animation-duration: 12.5s; animation-delay: 1.8s; }
+    .snowflake:nth-child(9)  { left: 68%; font-size: 9px;  animation-duration: 10.5s; animation-delay: 2.2s; }
+    .snowflake:nth-child(10) { left: 76%; font-size: 13px; animation-duration: 13.5s; animation-delay: 0.3s; }
+    .snowflake:nth-child(11) { left: 84%; font-size: 11px; animation-duration: 11.5s; animation-delay: 1.2s; }
+    .snowflake:nth-child(12) { left: 92%; font-size: 14px; animation-duration: 12s; animation-delay: 2.8s; }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 22px;
+      padding: 18px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      margin-top: 16px;
+      padding: 15px 20px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #f472b6, #c026d3);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+      animation: pulseButton 1.8s ease-in-out infinite;
+      box-shadow: 0 0 0 rgba(236, 72, 153, 0.4);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      opacity: 0.96;
+    }
+
+    .copyright {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+
+    @keyframes pulseButton {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.4);
+      }
+      50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 0 12px rgba(236, 72, 153, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(236, 72, 153, 0);
+      }
+    }
+
+    @keyframes snowFall {
+      0% {
+        transform: translateY(-10px) translateX(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(50vh) translateX(12px);
+      }
+      100% {
+        transform: translateY(110vh) translateX(-10px);
+        opacity: 0.2;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 14px;
+        border-radius: 18px;
+      }
+
+      .btn {
+        font-size: 15px;
+        padding: 14px 18px;
+      }
+
+      .copyright {
+        font-size: 12px;
+      }
+
+      .snowflake:nth-child(9),
+      .snowflake:nth-child(10),
+      .snowflake:nth-child(11),
+      .snowflake:nth-child(12) {
+        display: none;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BUCIN4D – Portal Hiburan Digital",
+    "url": "https://inilahbucin4d.github.io/",
+    "description": "Portal BUCIN4D dengan tampilan modern, ringan, dan responsif untuk berbagai perangkat.",
+    "inLanguage": "id-ID"
+  }
+  </script>
+</head>
+<body>
+  <div class="snow-wrap" aria-hidden="true">
+    <span class="snowflake">❄</span>
+    <span class="snowflake">❅</span>
+    <span class="snowflake">❄</span>
+    <span class="snowflake">❅</span>
+    <span class="snowflake">❄</span>
+    <span class="snowflake">❅</span>
+    <span class="snowflake">❄</span>
+    <span class="snowflake">❅</span>
+    <span class="snowflake">❄</span>
+    <span class="snowflake">❅</span>
+    <span class="snowflake">❄</span>
+    <span class="snowflake">❅</span>
+  </div>
+
+  <main class="container">
+    <section class="card">
+      <img src="asset/BUCIN4D.png" alt="Gambar utama BUCIN4D" class="main-image" />
+      <p class="cta-note">Klik tombol di bawah untuk masuk ke website dengan lebih cepat.</p>
+      <a href="https://goolink.id/DfJsL" class="btn" target="_blank" rel="nofollow noopener">Masuk Sekarang</a>
+    </section>
+    <div class="copyright">&copy; 2026 BUCIN4D. All Rights Reserved.</div>
+  </main>
+</body>
+</html>
